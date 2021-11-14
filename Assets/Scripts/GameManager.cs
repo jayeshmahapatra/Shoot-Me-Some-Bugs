@@ -91,11 +91,20 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score : " + score;
     }
 
+    public int getSoldierCount()
+    {
+        return soldierCount;
+    }
+
     public void UpdateSoldierCount(int newSoldierCount)
     {
         soldierCount = newSoldierCount;
     }
     
+    public int getBeetleCount()
+    {
+        return beetleCount;
+    }
     public void UpdateBeetleCount(int newBeetleCount)
     {
         beetleCount = newBeetleCount;

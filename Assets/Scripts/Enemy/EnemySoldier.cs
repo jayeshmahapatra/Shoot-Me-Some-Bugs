@@ -84,7 +84,7 @@ public class EnemySoldier : MonoBehaviour
     {   killed = true;
         //Update Score
         gameManager.UpdateScore(killScore);
-        gameManager.UpdateSoldierCount(gameManager.soldierCount - 1);
+        gameManager.UpdateSoldierCount(gameManager.getSoldierCount() - 1);
         //Play Death Animation & Sound
         EnemyAS.clip = deathSound;
         EnemyAS.PlayOneShot(EnemyAS.clip);

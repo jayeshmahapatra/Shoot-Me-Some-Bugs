@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyBeetlePrefab;
     public GameObject healthPickupPrefab;
     public GameObject armourPickupPrefab;
+    public GameObject enemyGiantBeetlePrefab;
 
     [Header("Spawn Management")]
     public int enemyCount;
@@ -70,6 +71,7 @@ public class SpawnManager : MonoBehaviour
     
     IEnumerator SpawnEnemyWave(int waveNumber)
     {   
+        
         waveText.GetComponent<TextMeshProUGUI>().text = "Wave : " + waveNumber;
         hudWaveText.text = "Wave (" + waveNumber + "/12)";
         waveText.SetActive(true);

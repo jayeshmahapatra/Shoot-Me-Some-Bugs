@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {   
-    public GameObject hitEffect;
+    public GameObject explosion;
+    public GameObject bloodSplatter;
+    private GameObject hitEffect;
     private float xRange = 11f;
     private float yRange = 7f;
     public int damage = 20;
@@ -35,11 +37,17 @@ public class Bullet : MonoBehaviour
         {
             //Damage the enemy
             other.gameObject.GetComponent<EnemyHealth>().DamageHealth(damage);
+            hitEffect = bloodSplatter;
 
 
         } else if (other.gameObject.CompareTag("Player") && enemyBullet)
         {
             other.gameObject.GetComponent<PlayerHealth>().DamageHealth(damage);
+            hitEffect = bloodSplatter;
+        }
+        else
+        {
+            hitEffect = explosion;
         }
 
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);

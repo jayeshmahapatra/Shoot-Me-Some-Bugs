@@ -3760,7 +3760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000009536743, y: 0.0000026226044, z: -10}
+  m_LocalPosition: {x: -0.0000009536743, y: 0.000012397766, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6346,6 +6346,7 @@ MonoBehaviour:
   enemyBeetlePrefab: {fileID: 7194853411470639443, guid: 89d981a24d9159047b287974415f48ca, type: 3}
   healthPickupPrefab: {fileID: 9112811899576037836, guid: 900a6054f370d894d8d2539c9408401a, type: 3}
   armourPickupPrefab: {fileID: 861689477045176272, guid: 12207b45f015b9b40a81d20ff3bf9bc7, type: 3}
+  enemyGiantBeetlePrefab: {fileID: 1935843529733415398, guid: 64768930538e1dc4cb32bf6bf4592baf, type: 3}
   enemyCount: 0
   maxHealthPickups: 1
   maxArmourPickups: 1

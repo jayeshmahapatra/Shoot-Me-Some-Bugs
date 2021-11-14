@@ -55,7 +55,7 @@ public class EnemyBeetle : MonoBehaviour
         {
             gameManager.UpdateScore(killScore);
         }
-        gameManager.UpdateBeetleCount(gameManager.beetleCount - 1);        
+        gameManager.UpdateBeetleCount(gameManager.getBeetleCount() - 1);        
         //Play Death Animation & Sound
         EnemyAS.clip = deathSound;
         EnemyAS.PlayOneShot(EnemyAS.clip);
