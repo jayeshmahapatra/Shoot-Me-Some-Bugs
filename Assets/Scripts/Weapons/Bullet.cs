@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {   
     public GameObject explosion;
     public GameObject bloodSplatter;
+    public GameObject insectSplatter;
     private GameObject hitEffect;
     private float xRange = 11f;
     private float yRange = 7f;
@@ -37,7 +38,18 @@ public class Bullet : MonoBehaviour
         {
             //Damage the enemy
             other.gameObject.GetComponent<EnemyHealth>().DamageHealth(damage);
-            hitEffect = bloodSplatter;
+
+            //If enemy is soldier -> hit effect = bloodSplatter 
+            //else hit effect = InsectSplatter
+            if(other.gameObject.GetComponent<EnemySoldier>())
+            {
+                hitEffect = bloodSplatter;
+            }
+            else
+            {
+                hitEffect = insectSplatter;
+            }
+            
 
 
         } else if (other.gameObject.CompareTag("Player") && enemyBullet)
@@ -50,7 +62,7 @@ public class Bullet : MonoBehaviour
             hitEffect = explosion;
         }
 
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
         Destroy(effect, 0.33f);
         Destroy(gameObject);
 

@@ -146,5 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 5134375744992086885, guid: 75258584f8dfaa24abd6c0cccd2b4be5, type: 3}
   bloodSplatter: {fileID: 5134375744992086885, guid: 0bc0977a21439b94e8f0c35560a75ffd, type: 3}
+  insectSplatter: {fileID: 933542532667824308, guid: 4561917f41de81b4b98804e6113390af, type: 3}
   damage: 20
   enemyBullet: 0
