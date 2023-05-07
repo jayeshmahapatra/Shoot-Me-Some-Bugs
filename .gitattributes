@@ -56,3 +56,5 @@
 #Don't count added packages for language
 Assets/AstarPathfindingProject/** linguist-vendored
 Assets/JMO[[:space:]]Assets/** linguist-vendored
+*.shader linguist-vendored
+*.cginc linguist-vendored
