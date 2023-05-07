@@ -52,3 +52,6 @@
 *.meta linguist-generated
 *.prefab linguist-generated
 *.unity linguist-generated
+
+#Don't count added packages for language
+AstarPathfindingProject/* linguist-vendored=false
