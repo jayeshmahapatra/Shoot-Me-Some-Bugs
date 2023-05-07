@@ -54,4 +54,5 @@
 *.unity linguist-generated
 
 #Don't count added packages for language
-Assets/AstarPathfindingProject/* linguist-vendored=false
+#Assets/AstarPathfindingProject/* linguist-vendored=false
+*.cs linguist-vendored=false
