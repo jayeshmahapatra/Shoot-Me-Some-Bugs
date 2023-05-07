@@ -54,5 +54,5 @@
 *.unity linguist-generated
 
 #Don't count added packages for language
-AstarPathfindingProject/** linguist-vendored
-JMO Assets/** linguist-vendored
+Assets/AstarPathfindingProject/** linguist-vendored
+Assets/JMO[[:space:]]Assets/** linguist-vendored
