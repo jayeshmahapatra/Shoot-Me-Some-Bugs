@@ -55,3 +55,4 @@
 
 #Don't count added packages for language
 Assets/AstarPathfindingProject/** linguist-vendored
+Assets/JMO Assets/** linguist-vendored
